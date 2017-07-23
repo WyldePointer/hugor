@@ -1,7 +1,16 @@
 # hugor
 A curl_* wrapper for PHP.
 
-Examples:
+## Examples:
+Simple form of a GET request:
+```
+$response = hugor_make_request(array(
+  "url" => "http://dwrap.local/api/www.google.com/limit/3/json",
+));
+```
+
+Or in a more complicated situation:
+
 ```
 $backend_response = make_curl_http_request(array(
   "url" => "path/to/your/URI/",
