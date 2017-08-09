@@ -5,8 +5,15 @@ A curl_* wrapper for PHP.
 Simple form of a GET request:
 ```
 $response = hugor_make_request(array(
-  "url" => "http://dwrap.local/api/www.google.com/limit/3/json",
+  "url" => "http://dwrap.local/api/get_ip_by_name/www.google.com/json/limit/3",
 ));
+
+var_dump($response);
+```
+
+Result:
+```
+string(52) "["74.125.232.243","74.125.232.240","74.125.232.244"]"
 ```
 
 Or in a more complicated situation:
